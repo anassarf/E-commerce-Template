@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/uikit.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style-media.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/font-awesome.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <!-- navbar -->
+    
+        <nav id="menu" class="uk-visible@l" style="margin: 0;padding: 0px 122px;">
+    
+            <div class="menu-item" style="margin-left: 20px;padding: 0;position: relative;bottom: 33px;" >
+                <div >
+                  <a class="uk-logo" href="index.html"><img src="photo/logo2.png" alt="" width="150"></a>                 
+                </div>
+              </div>
+    
+            <div class="menu-item active" style="margin-left: 300px;">
+                <div>
+                    <a  class="menu-item-link" href="products.html">Caftan</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+    
+                <div>
+                    <a class="menu-item-link" href="products.html">Djelaba</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+    
+                <div>
+                    <a class="menu-item-link" href="products.html">Gandora</a>
+                </div>
+            </div>
+               
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="products.html">Accessoire</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="inscription.html">Services</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="inscription.html">Contact</a>
+                </div>
+            </div>
+          
+          
+            
+    
+            
+            <!-- <div class="menu-item">
+          
+              <div class="menu-text">
+                <div class="image_profil_nav_outer">
+                  <div class="green_icon"></div>
+                    <div class="image_profil_nav_inner">
+                      <img src="https://i.pinimg.com/originals/43/96/61/439661dcc0d410d476d6d421b1812540.jpg">
+                    </div>
+                </div>
+              </div>
+              <div class="sub-menu">
+                <div class="icon-box">
+                    <div class="icon"></div>
+                    <div class="text">
+                      <a href=""> <div class="title">Profil </div> </a>
+                      <div class="sub-text">Find out where to begin below</div>
+          
+                    </div>
+                </div>
+          
+                <div class="icon-box">
+                  <div class="icon"></div>
+                  <div class="text">
+                    <a href=""> <div class="title">Logout </div> </a>
+                    <div class="sub-text">Find out where to begin below</div>
+          
+                  </div>
+              </div>
+              </div>
+              
+             
+            </div> -->
+    
+            <div class="menu-item uk-float-right">
+                <li><a href="#"><span uk-icon="icon: bag"></span> <span class="uk-badge" style="background: rgba(206, 4, 4, 0.733);">3</span></a></li>
+                <li><a href="#"><span uk-icon="icon: heart"></span> <span class="uk-badge" style="background: rgba(206, 4, 4, 0.733);">10</span></a></li>
+            </div>
+    
+           
+            
+          </nav>
+    
+         <!-- Navbar Mobile/Tablet -->
+         <div class="uk-hidden@l">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Caftan</a></li>
+                    <li><a href="products.html">Djelaba</a></li>
+                    <li><a href="products.html">Gandora</a></li>
+                    <li><a href="products.html">Accessoire</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.htnl">Contact</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    
+    </header>
+
+
+
+
+<br><br><br><br>
+
+<!-- <div class="uk-hidden@l">
+    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push" style='margin-left: 45%;'>
+    <span uk-icon="settings"></span>
+        Filter
+    </button>
+
+    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active">
+                    <br>
+                    <div class="uk-margin-small" uk-grid>
+                        <p style="padding-left:5px;">Price :</p>
+                        <input id="range" class="uk-range uk-width-2-3" type="range" value="200" min="200" max="1000" step="50" style="padding-left:5px;" oninput="document.getElementById('rangeValue').innerHTML = this.value">
+                        <p style="padding-left: 10px;" > <span class="" id="rangeValue">200</span> Dhs</p>
+                    </div>
+                </li>
+                <li class="uk-active">
+                    <div class="uk-margin-small" uk-grid>
+                        <p style="padding-left:5px;">Rating :</p>
+        
+                        <form class="rating" style="padding-left:5px;">                  
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <input class="inp-cbx" id="cbx1" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="cbx1">
+                                                <span class="span-checkbox">
+                                                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                        <polyline points="1 5 4 8 11 1"></polyline>
+                                                    </svg>
+                                                </span>
+                                    </li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                </ul>
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <input class="inp-cbx" id="cbx2" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="cbx2">
+                                                <span class="span-checkbox">
+                                                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                        <polyline points="1 5 4 8 11 1"></polyline>
+                                                    </svg>
+                                                </span>
+                                    </li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                </ul>
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <input class="inp-cbx" id="cbx3" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="cbx3">
+                                                <span class="span-checkbox">
+                                                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                        <polyline points="1 5 4 8 11 1"></polyline>
+                                                    </svg>
+                                                </span>
+                                    </li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                </ul>
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <input class="inp-cbx" id="cbx4" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="cbx4">
+                                                <span class="span-checkbox">
+                                                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                        <polyline points="1 5 4 8 11 1"></polyline>
+                                                    </svg>
+                                                </span>
+                                    </li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                    <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                                </ul>
+                            
+                        </form>
+        
+                        
+                        
+                    </div>
+                </li>
+                <li class="uk-active">
+                    <br>
+                    <div class="uk-margin-small" uk-grid>
+                        
+                    </div>
+                </li>
+
+                
+            </ul>
+
+        </div>
+    </div>
+</div> -->
+
+
+<div class="uk-container uk-container-medium">
+
+    <div class="uk-text-center" uk-grid>
+
+        <div class="uk-width-1-5@m uk-visible@l uk-background-muted uk-box-shadow-medium " style="padding-left: 2px;" >
+            <br>
+            <div class="uk-float-left uk-padding-small">               
+                <form>
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+                            <input class="uk-input" type="text"  placeholder="Search">
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+
+            <h3>Filter by price</h3>
+            <div>
+                <div class="uk-margin-small" style="padding-left: 20px;" uk-grid>
+                    <span>Price :</span>
+                    <input id="range" class="uk-range uk-width-2-5" type="range" value="200" min="200" max="1000" step="50" style="padding-left:5px;" oninput="document.getElementById('rangeValue').innerHTML = this.value">
+                    <p style="padding-left:10px;" > <span  id="rangeValue">200</span> Dhs</p>
+                </div>
+
+            </div>
+
+           
+
+            <div class="uk-float-left uk-padding-small">
+
+                <h3>Categories</h3>
+                <ul class="uk-list uk-link-text">
+                    <li><a href="#">Accesoire   ( 10 )</a></li>
+                    <li><a href="#">Djelaba   ( 20 )</a></li>
+                    <li><a href="#">Gandora  ( 25 )</a></li>
+                    <li><a href="#">Caftan  ( 50 )</a></li>
+
+                </ul>
+
+                <h3>Colors</h3>
+                    
+                <div class="wrapper_colors">
+                    <div class="checkbox">
+                      <input type="checkbox" id="a" checked>
+                      <label for="a" style="background-color: #333;"></label>
+                    </div>
+                       <div class="checkbox">
+                      <input type="checkbox" id="b">
+                      <label for="b" style="background-color: #457"></label>
+                    </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c">
+                      <label for="c" style="background-color: rgb(22, 66, 153)"></label>
+                    </div>
+                      <div class="checkbox">
+                      <input type="checkbox" id="d">
+                      <label for="d" style="background-color: rgb(153, 22, 136);"></label>
+                    </div>
+                      <div class="checkbox">
+                      <input type="checkbox" id="e">
+                      <label for="e" style="background-color: rgb(22, 153, 44);"></label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="f">
+                        <label for="f" style="background-color: rgb(172, 162, 21);"></label>
+                      </div>
+                  </div>
+                    <br>
+                <h3>Reviews</h3>
+                <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+                    
+                    <div class="uk-margin-small">
+                        <img src="http://127.0.0.1:5500/photo/2.jpeg" alt="" width="70" height="100">
+                    </div>
+                    <div style="padding-left: 0;width: 125px;" class="uk-margin-small">
+                        <div class="uk-card" style="padding: 15px 25px 5px 0;">
+                            <a href=""><span>Analog Clock</span></a>
+                                <div class="sidebar">
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                </div>
+                            <span>by Majda</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-margin-small">
+                        <img src="http://127.0.0.1:5500/photo/1.jpeg" alt="" width="70" height="100">
+                    </div>
+                    <div style="padding-left: 0;width: 125px;" class="uk-margin-small">
+                        <div class="uk-card " style="padding: 15px 25px 5px 0;">
+                            <a href=""><span>Analog Clock</span></a>
+                                <div class="sidebar">
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                </div>
+                            <span>by Majda</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-margin-small">
+                        <img src="http://127.0.0.1:5500/photo/5.jpeg" alt="" width="70" height="100">
+                    </div>
+                    <div style="padding-left: 0;width: 125px;" class="uk-margin-small">
+                        <div class="uk-card " style="padding: 15px 25px 5px 0;">
+                            <a href=""><span>Analog Clock</span></a>
+                                <div class="sidebar">
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                </div>
+                            <span>by Majda</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+               
+
+                <ul class="uk-list uk-link-text">
+                    <li>
+                        <div>
+                            
+                        </div>
+                    </li>
+
+                   
+
+                    
+                </ul>
+
+                
+                
+            </div>
+
+            
+
+           
+
+            
+       
+        </div>
+
+        <div class="uk-width-expand@m">
+
+                <div class=" uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l uk-child-width-1-3@xl uk-grid-small uk-grid-match uk-margin-small-top " uk-grid 
+                uk-animation-fade    
+                >
+                    <div>
+                        <div class="uk-card ">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/2.jpeg" alt="">
+                                    </a>        
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            700 Dhs
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/8.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-red" >sold</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            700 Dhs
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>                                
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                   
+        
+                    <div>
+                        <div class="uk-card">
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/1.jpeg" alt="">
+                                    </a>  
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            700 Dhs
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                                
+                                            </a>                                
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+        
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/4.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-gold" >Salt</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            700 Dhs
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/3.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-gold" >Salt</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            700 Dhs
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/8.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-gold" >Salt</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/6.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+        
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-gold" >Salt</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="uk-card">
+        
+                            <div class="card uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                                    <a href="product.html">
+                                        <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/7.jpeg" alt="">
+                                    </a>              
+                                    <div class=" uk-position-small uk-position-top-left	">
+                                            Analog Clock
+                                            <small>
+                                                <div class="uk-transition-slide-left-small">
+                                                    <small>Women</small>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    <span class="uk-icon" uk-icon="icon:star"></span>
+                                                    
+                                                </div>
+                                            </small>
+                                    </div>
+        
+                                    <div class=" uk-position-small uk-position-top-right">
+                                        <a href="#"> <div class="badge text-white badge-gold" >Salt</div></a> 
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-left	">
+                                        <div class="uk-transition-slide-left-small">
+                                            <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                        </div>
+                                    </div>
+            
+                                    <div class=" uk-position-small uk-position-bottom-right">
+                                        <div class="uk-transition-slide-right-small">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    
+        
+                </div>
+
+
+        </div>
+
+        
+    </div>
+
+</div>
+<br><br>
+<ul class="uk-pagination uk-flex-center" uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li class="uk-disabled"><span>...</span></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li class="uk-active"><span>7</span></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul>
+
+<br><br>
+    
+<!-- footer -->
+<footer class="site-footer">
+    
+    <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+        
+        <div>
+            <h3 style="color:#fff">Apropos de nous</h3>
+            CAFTANOBLE a été créé et lancé en 2021 en tant que boutique en ligne de vente de djellaba et caftan marocain, ainsi que des robes,Notre site propose également des designs uniques et des collections exclusives, vous donnant la possibilité de trouver les styles que vous ne trouverez pas ailleurs. Nous avons une grande variété de styles pour pour votre quotidien ou tous vos événements.
+        </div>
+        <div>
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-text-center" uk-grid>
+                <div>
+                    <h6>Nos politiques</h6>
+                    <ul class="footer-links">
+                        <li>
+                            Politique de livraison
+                        </li>
+                        <li>
+                            Politique de retour
+                        </li>
+                        <li>
+                            Politique de confidentialité
+                        </li>
+                        <li>
+                            Mentions Légales
+                        </li>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Informations</h6>
+                    <ul class="footer-links">
+                        <li>
+                            A propos de nous
+                        </li>
+                        <li>
+                            Qui sommes nous ?
+                        </li>
+                        <li>
+                            FAQ
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Newsletter</h6>
+                    <ul class="footer-links">
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: mail"></a>
+                                <input class="uk-input" type="text">
+                            </div>
+                        </div>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                    
+
+            </div>
+            
+        </div>
+
+       
+
+    </div>
+    <hr>
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+
+            <div>
+                <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                    <a href="#">Scanfcode</a>.
+                </p>
+             </div>
+   
+             <div>
+               <ul class="social-icons">
+                    <li><a class="facebook"   href="#"  uk-icon="facebook"></a></li>
+                    <li><a class="twitter"    href="#"  uk-icon="twitter"></a></a></li>
+                    <li><a  class="instagram" href="#"  uk-icon="instagram"></a></li>
+                    <li><a  class="whatsapp"  href="#"  uk-icon="whatsapp"></a></li>    
+               </ul>
+            </div>
+        </div>
+</footer>
+
+    <script src="js/E-script.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icone.js"></script>
+</body>
+</html>

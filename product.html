@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/uikit.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style-media.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/font-awesome.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <!-- navbar -->
+    
+        <nav id="menu" class="uk-visible@l" style="margin: 0;padding: 0px 122px;">
+    
+            <div class="menu-item" style="margin-left: 20px;padding: 0;position: relative;bottom: 33px;" >
+                <div >
+                  <a class="uk-logo" href="index.html"><img src="photo/logo2.png" alt="" width="150"></a>                 
+                </div>
+              </div>
+    
+            <div class="menu-item active" style="margin-left: 300px;">
+                <div>
+                    <a  class="menu-item-link" href="products.html">Caftan</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+    
+                <div>
+                    <a class="menu-item-link" href="products.html">Djelaba</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+    
+                <div>
+                    <a class="menu-item-link" href="products.html">Gandora</a>
+                </div>
+            </div>
+               
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="products.html">Accessoire</a>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="inscription.html">Services</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div>
+                    <a class="menu-item-link" href="inscription.html">Contact</a>
+                </div>
+            </div>
+          
+          
+            
+    
+            
+            <!-- <div class="menu-item">
+          
+              <div class="menu-text">
+                <div class="image_profil_nav_outer">
+                  <div class="green_icon"></div>
+                    <div class="image_profil_nav_inner">
+                      <img src="https://i.pinimg.com/originals/43/96/61/439661dcc0d410d476d6d421b1812540.jpg">
+                    </div>
+                </div>
+              </div>
+              <div class="sub-menu">
+                <div class="icon-box">
+                    <div class="icon"></div>
+                    <div class="text">
+                      <a href=""> <div class="title">Profil </div> </a>
+                      <div class="sub-text">Find out where to begin below</div>
+          
+                    </div>
+                </div>
+          
+                <div class="icon-box">
+                  <div class="icon"></div>
+                  <div class="text">
+                    <a href=""> <div class="title">Logout </div> </a>
+                    <div class="sub-text">Find out where to begin below</div>
+          
+                  </div>
+              </div>
+              </div>
+              
+             
+            </div> -->
+    
+            <div class="menu-item uk-float-right">
+                <li><a href="#"><span uk-icon="icon: bag"></span> <span class="uk-badge" style="background: rgba(206, 4, 4, 0.733);">3</span></a></li>
+                <li><a href="#"><span uk-icon="icon: heart"></span> <span class="uk-badge" style="background: rgba(206, 4, 4, 0.733);">10</span></a></li>
+            </div>
+    
+           
+            
+          </nav>
+    
+         <!-- Navbar Mobile/Tablet -->
+         <div class="uk-hidden@l">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Caftan</a></li>
+                    <li><a href="products.html">Djelaba</a></li>
+                    <li><a href="products.html">Gandora</a></li>
+                    <li><a href="products.html">Accessoire</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.htnl">Contact</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    
+    </header>
+
+<br><br>
+
+
+<div class="uk-container-medium uk-padding">
+    <div class="uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+
+        <div>
+            
+            <div class="product-gallery " id="product-gallery">
+                <ul class="image-list" id="image-list">
+                    <li class="image-item "><img class="imgSrc" src="photo/1.jpeg" onclick="addNewSrc(1)"></li>
+                    <li class="image-item "><img class="imgSrc" src="photo/2.jpeg" onclick="addNewSrc(2)"></li>
+                    <li class="image-item "><img class="imgSrc" src="photo/3.jpeg" onclick="addNewSrc(3)"></li>
+                    <li class="image-item "><img class="imgSrc" src="photo/4.jpeg" onclick="addNewSrc(4)"></li>
+                    <li class="image-item "><img class="imgSrc" src="photo/5.jpeg" onclick="addNewSrc(5)"></li>
+                    <li class="image-item "><img class="imgSrc" src="photo/6.jpeg" onclick="addNewSrc(6)"></li>
+                </ul>
+                <div class="product-imaged uk-box-shadow-medium" id="product-imaged">
+                    <img id="xzoom-default"  class="active " src="photo/1.jpeg" xoriginal="photo/1.jpeg">
+                </div>
+            </div>
+
+        </div>
+        <div class="Detail-item">
+
+
+               <div class="uk-margin">
+                  <h3>
+                       Djelaba Moderne &nbsp;&nbsp;
+                        <div uk-form-custom>
+                            <a href="#"> <div class="badge text-white badge-red" >sold</div></a> 
+                        </div>
+                        <ul class="uk-iconnav">
+                            <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                            <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                            <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                            <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                            <li><span class="uk-icon" uk-icon="icon:star"></span></li>
+                        </ul>
+                  </h3>
+                 
+                </div>
+
+                <div class="uk-flex">
+                    <h3 class='uk-text-danger'>799 DH </h3>
+                    <div style="padding-top: 8px; padding-left: 8px;"> <del>899 DH</del></div>
+                    
+                  </div>
+                  <h4 class="uk-text-secondary"  style="margin-top: 2px;"> Availability: <label class="uk-text-success">In stock</label></h4>
+                   
+                  <div class="content " >
+                    <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasant exercise of effort and ingenuity for the grower.</p>
+                    <p>By contrast with other plant cultivation practices, bonsai is not intended for production of food or for medicine. Instead, bonsai practice focuses on long-term cultivation and shaping of one or more small trees growing in a container.</p>
+                  </div>
+
+                  <div class="uk-flex">
+                    <div class="uk-card"><div class="size-picker">
+                        Size:
+                          <div class="range-picker" id="range-picker">
+                            <div class="">XS</div>
+                            <div class="active">S</div>
+                            <div class="">M</div>
+                            <div class="">L</div>
+                            <div class="">XL</div>
+                            <div class="">XXL</div>
+                          </div>
+                        <a class="small align-right" style="color:#457; font-size:0.8rem;" href="#">VIEW SIZE-CHART</a>
+                      </div>
+                    </div>
+
+                    <div class="uk-card">
+                        
+                        <div class="color-options">
+                            Color:
+                        <div class="color-picker">
+                          <div class="color overlay" id="color-overlay"><div class="check"></div></div>
+                            <div class="color color-a" id="color-a"></div>
+                            <div class="color color-b" id="color-b"></div>
+                            <div class="color color-c" id="color-c"></div>
+                            <div class="color color-d" id="color-d"></div>
+                            <div class="color color-e" id="color-e"></div>
+                            <div class="color color-f" id="color-f"></div>
+                        </div>
+                                <span class="small" style="color:#457; font-size:0.8rem;">COLOR: <span id="color-name">GREY / 050</span></span>
+                      </div> 
+
+                    </div>
+                </div>
+
+                <br>
+                    <div class="uk-flex">
+                        <button class="uk-button uk-button-danger uk-button-large">ADD TO SHOP</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="uk-button uk-button-danger uk-button-large">SHOP NOW &nbsp;&nbsp;&nbsp;</button>
+
+                    </div>
+                      <br><br><br>
+                      <small>Share this product:</small>
+                      <ul class="social-icons">
+                        <li><a class="facebook"   href="#"  uk-icon="facebook"></a></li>
+                        <li><a class="twitter"    href="#"  uk-icon="twitter"></a></a></li>
+                        <li><a  class="instagram" href="#"  uk-icon="instagram"></a></li>
+                        <li><a  class="whatsapp"  href="#"  uk-icon="whatsapp"></a></li>    
+                   </ul>
+
+                  
+        </div>
+        
+
+
+    </div>
+    
+</div>
+
+<div class="uk-container uk-container-large uk-padding">
+
+    <ul class="uk-subnav uk-subnav-pill" style="margin: 0px;" data-uk-tab="{connect:'#my-id'}" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+        <li style=" background: #f3f3f3;"><a href="">Description</a></li>
+        <li style=" background: #f3f3f3;"><a href="">Details</a></li>
+        <li style=" background: #f3f3f3;"><a href="">Comments</a></li>
+    </ul>
+    <ul class="uk-switcher  uk-padding-small" style=" background: #f3f3f3; margin-top: 0px;">
+        <li>
+            <p class="p-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames.  
+            </p> 
+        </li>
+        <li>
+            <ul class="p-5">
+                <li>Colour Shown: Green moss/White/Gray</li>
+                <li>Style: CT5062-100</li>
+              </ul>
+        </li>
+        <li>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-small" uk-grid="masonry: true">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">Anas sarf</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it .</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">Kacem sarf</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>                      
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it  has a regular title and short paragraph of text below it has a regular title and short paragraph of text below it.</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">Majda sarf</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>                      
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it title and short paragraph of text below it title and short paragraph of text below it  .</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">Karima haloua</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>                      
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it .</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">hassana haloua</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>                       
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it title and short paragraph of text below it .</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-padding-small">
+                        <h3 class="card-title" style="margin-bottom: 0;">Nawfal sarf</h3>
+                        <small>
+                            <span class="uk-icon" uk-icon="icon:star"> </span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                            <span class="uk-icon" uk-icon="icon:star"></span>  
+                            <span class="uk-icon" uk-icon="icon:star"></span>                       
+                        </small>                      
+                        <p class="uk-card-text">This card has a regular title and short paragraph of text below it .</p>
+                        <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </li>
+            
+         
+
+           
+
+
+
+        
+    </ul>
+
+</div>
+
+
+
+<div class="divider"><span></span><span>Suggestion</span><span></span></div>
+
+    <div class="uk-container uk-container-large">
+
+
+        <div class="uk-child-width-1-4@s uk-text-center" uk-grid>
+
+            <div>
+                <div class="uk-card ">
+
+                    <div class="card uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                            <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/4.jpeg" alt="">
+
+                            <div class=" uk-position-small uk-position-top-left	">
+                                    Djelaba Romi
+                                    <small>
+                                        <div class="uk-transition-slide-left-small">
+                                            <small>Women</small>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+
+                                        </div>
+                                    </small>
+                            </div>
+
+                            <div class=" uk-position-small uk-position-top-right">
+                                <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-left	">
+                                <div class="uk-transition-slide-left-small">
+                                    <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                </div>
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-right">
+                                <div class="uk-transition-slide-right-small">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card ">
+
+                    <div class="card uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                            <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/1.jpeg" alt="">
+
+                            <div class=" uk-position-small uk-position-top-left	">
+                                    Djelaba Romi
+                                    <small>
+                                        <div class="uk-transition-slide-left-small">
+                                            <small>Women</small>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+
+                                        </div>
+                                    </small>
+                            </div>
+
+                            <div class=" uk-position-small uk-position-top-right">
+                                <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-left	">
+                                <div class="uk-transition-slide-left-small">
+                                    <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                </div>
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-right">
+                                <div class="uk-transition-slide-right-small">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card ">
+
+                    <div class="card uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                            <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/2.jpeg" alt="">
+
+                            <div class=" uk-position-small uk-position-top-left	">
+                                    Djelaba Romi
+                                    <small>
+                                        <div class="uk-transition-slide-left-small">
+                                            <small>Women</small>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+
+                                        </div>
+                                    </small>
+                            </div>
+
+                            <div class=" uk-position-small uk-position-top-right">
+                                <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-left	">
+                                <div class="uk-transition-slide-left-small">
+                                    <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                </div>
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-right">
+                                <div class="uk-transition-slide-right-small">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card ">
+
+                    <div class="card uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle " tabindex="0">
+                            <img class="uk-transition-scale-up uk-transition-opaque"  height="233" alt="" uk-img src="photo/5.jpeg" alt="">
+
+                            <div class=" uk-position-small uk-position-top-left	">
+                                    Djelaba Romi
+                                    <small>
+                                        <div class="uk-transition-slide-left-small">
+                                            <small>Women</small>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+                                            <span class="uk-icon" uk-icon="icon:star"></span>
+
+                                        </div>
+                                    </small>
+                            </div>
+
+                            <div class=" uk-position-small uk-position-top-right">
+                                <a href="#"> <div class="badge text-white badge-blue" >NEW</div></a> 
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-left	">
+                                <div class="uk-transition-slide-left-small">
+                                    <a href="" class=" uk-margin-small-right" uk-icon="credit-card"></a><small>700 DH</small>
+                                </div>
+                            </div>
+    
+                            <div class=" uk-position-small uk-position-bottom-right">
+                                <div class="uk-transition-slide-right-small">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+<br><br>
+    
+<!-- footer -->
+<footer class="site-footer">
+    
+    <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+        
+        <div class="uk-padding-medium">
+            <h3 style="color:#fff">Apropos de nous</h3>
+            
+            CAFTANOBLE a été créé et lancé en 2021 en tant que boutique en ligne de vente de djellaba et caftan marocain, ainsi que des robes,Notre site propose également des designs uniques et des collections exclusives, vous donnant la possibilité de trouver les styles que vous ne trouverez pas ailleurs. Nous avons une grande variété de styles pour pour votre quotidien ou tous vos événements.
+        </div>
+        <div>
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-text-center" uk-grid>
+                <div>
+                    <h6>Nos politiques</h6>
+                    <ul class="footer-links">
+                        <li>
+                            Politique de livraison
+                        </li>
+                        <li>
+                            Politique de retour
+                        </li>
+                        <li>
+                            Politique de confidentialité
+                        </li>
+                        <li>
+                            Mentions Légales
+                        </li>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Informations</h6>
+                    <ul class="footer-links">
+                        <li>
+                            A propos de nous
+                        </li>
+                        <li>
+                            Qui sommes nous ?
+                        </li>
+                        <li>
+                            FAQ
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Newsletter</h6>
+                    <ul class="footer-links">
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: mail"></a>
+                                <input class="uk-input" type="text">
+                            </div>
+                        </div>
+
+                       
+                        
+                    </ul>
+                </div>
+
+                    
+
+            </div>
+            
+        </div>
+
+       
+
+    </div>
+    <hr>
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+
+            <div>
+                <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                    <a href="#">Scanfcode</a>.
+                </p>
+             </div>
+   
+             <div>
+               <ul class="social-icons">
+                    <li><a class="facebook"   href="#"  uk-icon="facebook"></a></li>
+                    <li><a class="twitter"    href="#"  uk-icon="twitter"></a></a></li>
+                    <li><a  class="instagram" href="#"  uk-icon="instagram"></a></li>
+                    <li><a  class="whatsapp"  href="#"  uk-icon="whatsapp"></a></li>    
+               </ul>
+            </div>
+        </div>
+</footer>
+    <script src="js/E-script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icone.js"></script>
+</body>
+</html>
